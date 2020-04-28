@@ -44,6 +44,11 @@ public class SwipeMenuItem {
     private int width = -2;
     private int height = -2;
     private int weight = 0;
+    private int margin;
+    private int marginLeft;
+    private int marginTop;
+    private int marginRight;
+    private int marginBottom;
 
     public SwipeMenuItem(Context context) {
         mContext = context;
@@ -162,5 +167,51 @@ public class SwipeMenuItem {
 
     public int getWeight() {
         return weight;
+    }
+
+
+    public int getMargin() {
+        return margin;
+    }
+
+    public SwipeMenuItem setMargin(int margin) {
+        this.margin = margin;
+        return this;
+    }
+
+    public int getMarginLeft() {
+        return marginLeft;
+    }
+
+    public SwipeMenuItem setMarginLeft(int marginLeft) {
+        this.marginLeft = marginLeft;
+        return this;
+    }
+
+    public int getMarginTop() {
+        return marginTop;
+    }
+
+    public SwipeMenuItem setMarginTop(int marginTop) {
+        this.marginTop = marginTop;
+        return this;
+    }
+
+    public int getMarginRight() {
+        return marginRight;
+    }
+
+    public SwipeMenuItem setMarginRight(int marginRight) {
+        this.marginRight = marginRight;
+        return this;
+    }
+
+    public int getMarginBottom() {
+        return marginBottom;
+    }
+
+    public SwipeMenuItem setMarginBottom(int marginBottom) {
+        this.marginBottom = marginBottom;
+        return this;
     }
 }
