@@ -80,9 +80,11 @@ public class ListActivity extends BaseActivity {
 
             // 添加右侧的，如果不添加，则右侧不会出现菜单。
             {
-                SwipeMenuItem deleteItem = new SwipeMenuItem(ListActivity.this).setBackground(R.drawable.selector_red)
+                SwipeMenuItem deleteItem = new SwipeMenuItem(ListActivity.this).setBackground(R.drawable.selector_round_rect)
                     .setImage(R.drawable.ic_action_delete)
                     .setText("删除")
+                    .setMarginTop(10)
+                    .setMarginBottom(10)
                     .setTextColor(Color.WHITE)
                     .setWidth(width)
                     .setHeight(height);
@@ -90,6 +92,8 @@ public class ListActivity extends BaseActivity {
 
                 SwipeMenuItem addItem = new SwipeMenuItem(ListActivity.this).setBackground(R.drawable.selector_green)
                     .setText("添加")
+                    .setMarginLeft(20)
+                    .setMarginRight(20)
                     .setTextColor(Color.WHITE)
                     .setWidth(width)
                     .setHeight(height);

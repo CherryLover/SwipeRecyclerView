@@ -83,6 +83,7 @@ public class ListActivity extends BaseActivity {
                 SwipeMenuItem deleteItem = new SwipeMenuItem(ListActivity.this).setBackground(R.drawable.selector_red)
                     .setImage(R.drawable.ic_action_delete)
                     .setText("删除")
+                    .setMarginRight(30)
                     .setTextColor(Color.WHITE)
                     .setWidth(width)
                     .setHeight(height);
@@ -91,6 +92,8 @@ public class ListActivity extends BaseActivity {
                 SwipeMenuItem addItem = new SwipeMenuItem(ListActivity.this).setBackground(R.drawable.selector_green)
                     .setText("添加")
                     .setTextColor(Color.WHITE)
+                    .setMarginTop(20)
+                    .setMarginBottom(20)
                     .setWidth(width)
                     .setHeight(height);
                 swipeRightMenu.addMenuItem(addItem); // 添加菜单到右侧。
